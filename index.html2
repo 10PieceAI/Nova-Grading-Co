@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova Card Verification</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Nova Card Verification</h1>
+
+        <div class="verify-section">
+            <label for="serialInput">Enter Serial Number:</label>
+            <input type="text" id="serialInput" placeholder="Enter serial...">
+            <button id="verifyBtn">Verify</button>
+        </div>
+
+        <div id="result" class="result"></div>
+
+        <button id="viewPopulationBtn" class="hidden">View Full Population Report</button>
+    </div>
+
+    <script src="population-data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
