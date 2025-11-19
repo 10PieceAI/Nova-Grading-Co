@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nano Card Grading - Certified Quality from the Sierra Nevadas</title>
-    <!-- Load Tailwind CSS -->
+    <title>Nova Grading Co. – A New Star in Card Grading</title>
+
+    <!-- Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Configure Tailwind to use Inter font and define the custom red accent -->
+
+    <!-- Tailwind Config -->
     <script>
         tailwind.config = {
             theme: {
@@ -15,450 +17,264 @@
                         sans: ['Inter', 'sans-serif'],
                     },
                     colors: {
-                        'fhcg-red': '#d4af37', // Gold
-                        'fhcg-dark': '#111111', // very dark grey
+                        novaGold: '#B8860B',    // Deep Gold
+                        novaBlack: '#0A0A0A',   // Premium black
+                        novaGray: '#1A1A1A',    // Dark gray for soft contrast
                     }
                 }
             }
         }
     </script>
+
     <style>
-        /* Apply smooth scrolling and default font */
         html {
             scroll-behavior: smooth;
             font-family: 'Inter', sans-serif;
         }
     </style>
 </head>
-<body class="bg-fhcg-dark text-white">
 
-    <!-- Navigation Bar -->
-    <nav class="bg-white shadow-md sticky top-0 z-10">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-16">
-                <!-- Logo/Brand -->
-                <a href="#" class="text-2xl font-extrabold tracking-tight text-fhcg-dark">
-                    <span class="text-fhcg-red">Nano</span> Card Grading
-                </a>
-                <!-- Nav Links (hidden on mobile, visible on desktop) -->
-                <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
-                    <a href="#about" class="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium hover:border-fhcg-red">About Us</a>
-                    <a href="#process" class="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium hover:border-fhcg-red">Our Process</a>
-                    <a href="#verify" class="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium hover:border-fhcg-red">Verify Card</a>
-                    <a href="#pricing" class="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium hover:border-fhcg-red">Pricing</a>
-                    <a href="#submit" class="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium text-fhcg-red border-fhcg-red">Submit Now</a>
-                </div>
-            </div>
+<body class="bg-novaBlack text-white">
+
+<!-- NAVBAR -->
+<nav class="bg-white shadow-xl sticky top-0 z-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+
+        <!-- LOGO -->
+        <a class="text-2xl font-extrabold tracking-wide text-novaBlack">
+            <span class="text-novaGold">Nova</span> Grading Co.
+        </a>
+
+        <!-- LINKS -->
+        <div class="hidden sm:flex space-x-8 text-novaBlack font-medium">
+            <a href="#about" class="hover:text-novaGold transition">About</a>
+            <a href="#process" class="hover:text-novaGold transition">Process</a>
+            <a href="#verify" class="hover:text-novaGold transition">Verify</a>
+            <a href="#pricing" class="hover:text-novaGold transition">Pricing</a>
+            <a href="#submit" class="text-novaGold border-b-2 border-novaGold">Submit</a>
         </div>
-    </nav>
+    </div>
+</nav>
 
-    <!-- 1. Hero Section (Intro) -->
-    <header id="about" class="pt-16 pb-24 bg-gray-50/50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 class="text-6xl font-extrabold tracking-tight text-fhcg-dark sm:text-7xl lg:text-8xl">
-                Nano Precision Grading
-            </h1>
-            <p class="mt-4 text-xl text-gray-600 max-w-3xl mx-auto">
-                We are Nano Card Grading, proudly operating out of the majestic Sierra Nevada mountains, right in the heart of the Yosemite region. Our dedication to quality is as timeless as the granite peaks that surround us.
-            </p>
-            <div class="mt-10 flex justify-center">
-                <a href="#submit" class="px-8 py-3 border border-transparent text-base font-medium rounded-xl shadow-lg text-white bg-fhcg-red hover:bg-red-700 transition duration-300 transform hover:scale-105">
-                    Start Your Submission
-                </a>
-            </div>
-        </div>
-    </header>
+<!-- HERO -->
+<header id="about" class="pt-20 pb-28 bg-gradient-to-b from-white to-gray-100 text-center">
+    <h1 class="text-6xl sm:text-7xl lg:text-8xl font-extrabold text-novaBlack">
+        Nova Grading Co.
+    </h1>
+    <p class="mt-4 text-xl text-gray-700 max-w-3xl mx-auto">
+        A new star in card grading — bringing clarity, precision, and brilliance to every collection.
+    </p>
+    <div class="mt-10">
+        <a href="#submit" class="px-8 py-3 bg-novaGold text-white rounded-xl shadow-lg hover:shadow-2xl hover:bg-yellow-700 transition transform hover:scale-105">
+            Start Your Submission
+        </a>
+    </div>
+</header>
 
-    <!-- 2. Grading Process (AI + Human Input) -->
-    <section id="process" class="py-20">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12">
-                <h2 class="text-4xl font-extrabold text-fhcg-dark sm:text-5xl border-b-4 border-fhcg-red inline-block pb-1">
-                    The Nano Standard: AI Precision Meets Human Expertise
-                </h2>
-                <p class="mt-4 text-lg text-gray-600">
-                    We offer a state-of-the-art grading system that ensures consistency, objectivity, and accuracy for every single card.
-                </p>
-            </div>
+<!-- PROCESS -->
+<section id="process" class="py-20 bg-novaGray/50">
+    <div class="max-w-7xl mx-auto px-6 text-center">
 
-            <div class="grid md:grid-cols-2 gap-10">
-                <!-- AI Grading -->
-                <div class="bg-gray-100 p-8 rounded-2xl shadow-xl border-t-4 border-fhcg-red">
-                    <h3 class="text-2xl font-bold text-fhcg-red flex items-center mb-4">
-                        <span class="mr-3 text-3xl">🤖</span> AI-Powered Analysis
-                    </h3>
-                    <ul class="space-y-4 text-gray-700 list-disc list-inside">
-                        <li>**Centering:** High-resolution optical scanners capture millimetric measurements to determine perfect centering ratios.</li>
-                        <li>**Surface:** Deep learning algorithms detect micro-scratches, print defects, and imperfections invisible to the naked eye.</li>
-                        <li>**Corners & Edges:** Automated comparison against factory standard dimensions to ensure sharp, clean edges and corners.</li>
-                    </ul>
-                    <p class="mt-4 text-sm text-gray-500 italic">
-                        The AI provides a baseline score (0.0 to 10.0) based on objective data points.
-                    </p>
-                </div>
+        <h2 class="text-4xl sm:text-5xl font-extrabold text-white border-b-4 border-novaGold inline-block pb-2">
+            Precision Guided by Nova Technology
+        </h2>
+        <p class="mt-4 text-gray-300">
+            AI Star-Scan imaging + expert graders = flawless, consistent results.
+        </p>
 
-                <!-- Human Review -->
-                <div class="bg-gray-100 p-8 rounded-2xl shadow-xl border-t-4 border-fhcg-dark">
-                    <h3 class="text-2xl font-bold text-fhcg-dark flex items-center mb-4">
-                        <span class="mr-3 text-3xl">👨‍🔬</span> Expert Human Verification
-                    </h3>
-                    <ul class="space-y-4 text-gray-700 list-disc list-inside">
-                        <li>**Aesthetics & Eye Appeal:** Certified graders review the AI data, ensuring eye appeal factors like print quality and gloss are factored into the final grade.</li>
-                        <li>**Authenticity & Tampering:** Manual authentication to verify the card's origin and detect any signs of restoration or alteration.</li>
-                        <li>**Final Consensus:** The final grade is a consensus between the objective AI data and the subjective human expertise, providing maximum reliability.</li>
-                    </ul>
-                    <p class="mt-4 text-sm text-gray-500 italic">
-                        This dual-level review process is what defines the unmatched quality of a Nano Card Grading slab.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
+        <div class="grid md:grid-cols-2 gap-10 mt-12">
 
-    <!-- 3. Pricing Table -->
-    <section id="pricing" class="py-20 bg-gray-50/50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12">
-                <h2 class="text-4xl font-extrabold text-fhcg-dark sm:text-5xl border-b-4 border-fhcg-red inline-block pb-1">
-                    Simple, Transparent Pricing
-                </h2>
-                <p class="mt-4 text-lg text-gray-600">
-                    Choose the turnaround speed that fits your collection needs and budget. All tiers include full AI scanning and human certification.
-                </p>
-            </div>
-
-            <div class="grid gap-8 md:grid-cols-3">
-
-                <!-- Tier 1: Economy -->
-                <div class="bg-white p-8 rounded-2xl shadow-xl border-t-8 border-fhcg-dark flex flex-col transition duration-300 hover:shadow-2xl">
-                    <h3 class="text-2xl font-bold text-fhcg-dark mb-4">Economy</h3>
-                    <p class="text-5xl font-extrabold text-fhcg-dark mb-6">
-                        $15
-                        <span class="text-lg font-medium text-gray-500">/ card</span>
-                    </p>
-                    <p class="text-gray-600 mb-6">Our most popular choice for large submissions.</p>
-                    <ul class="space-y-3 text-left text-gray-700 flex-grow">
-                        <li class="flex items-center">
-                            <span class="text-fhcg-red mr-2">✓</span> **90-Day Turnaround** (Estimate)
-                        </li>
-                        <li class="flex items-center">
-                            <span class="text-fhcg-red mr-2">✓</span> AI + Human Grading
-                        </li>
-                        <li class="flex items-center">
-                            <span class="text-fhcg-red mr-2">✓</span> Custom Slab & Label
-                        </li>
-                        <li class="flex items-center">
-                            <span class="text-fhcg-red mr-2">✓</span> Secure Shipping (Extra Cost)
-                        </li>
-                    </ul>
-                    <a href="#submit" class="mt-8 block text-center py-3 rounded-xl border-2 border-fhcg-dark text-fhcg-dark font-semibold hover:bg-fhcg-dark hover:text-white transition duration-300">
-                        Select Economy
-                    </a>
-                </div>
-
-                <!-- Tier 2: Standard (Featured) -->
-                <div class="bg-fhcg-red p-8 rounded-2xl shadow-2xl border-t-8 border-white flex flex-col transform scale-105">
-                    <div class="text-center mb-4">
-                        <span class="inline-block bg-white text-fhcg-red text-xs font-bold px-3 py-1 rounded-full uppercase">Best Value</span>
-                    </div>
-                    <h3 class="text-2xl font-bold text-white mb-4">Standard</h3>
-                    <p class="text-5xl font-extrabold text-white mb-6">
-                        $30
-                        <span class="text-lg font-medium text-red-200">/ card</span>
-                    </p>
-                    <p class="text-red-100 mb-6">The perfect balance of speed and affordability.</p>
-                    <ul class="space-y-3 text-left text-white flex-grow">
-                        <li class="flex items-center">
-                            <span class="text-white mr-2">★</span> **30-Day Turnaround** (Estimate)
-                        </li>
-                        <li class="flex items-center">
-                            <span class="text-white mr-2">★</span> AI + Human Grading Priority
-                        </li>
-                        <li class="flex items-center">
-                            <span class="text-white mr-2">★</span> Custom Slab & Label
-                        </li>
-                        <li class="flex items-center">
-                            <span class="text-white mr-2">★</span> Full Insurance Coverage Option
-                        </li>
-                    </ul>
-                    <a href="#submit" class="mt-8 block text-center py-3 rounded-xl bg-white text-fhcg-red font-bold hover:bg-gray-200 transition duration-300">
-                        Select Standard
-                    </a>
-                </div>
-
-                <!-- Tier 3: Express -->
-                <div class="bg-white p-8 rounded-2xl shadow-xl border-t-8 border-fhcg-dark flex flex-col transition duration-300 hover:shadow-2xl">
-                    <h3 class="text-2xl font-bold text-fhcg-dark mb-4">Express</h3>
-                    <p class="text-5xl font-extrabold text-fhcg-dark mb-6">
-                        $50
-                        <span class="text-lg font-medium text-gray-500">/ card</span>
-                    </p>
-                    <p class="text-gray-600 mb-6">Need it fast? Get your cards back in weeks.</p>
-                    <ul class="space-y-3 text-left text-gray-700 flex-grow">
-                        <li class="flex items-center">
-                            <span class="text-fhcg-red mr-2">✓</span> **15-Day Turnaround** (Estimate)
-                        </li>
-                        <li class="flex items-center">
-                            <span class="text-fhcg-red mr-2">✓</span> Highest Submission Priority
-                        </li>
-                        <li class="flex items-center">
-                            <span class="text-fhcg-red mr-2">✓</span> Custom Slab & Label
-                        </li>
-                        <li class="flex items-center">
-                            <span class="text-fhcg-red mr-2">✓</span> Expedited Shipping Included
-                        </li>
-                    </ul>
-                    <a href="#submit" class="mt-8 block text-center py-3 rounded-xl border-2 border-fhcg-dark text-fhcg-dark font-semibold hover:bg-fhcg-dark hover:text-white transition duration-300">
-                        Select Express
-                    </a>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- 3.5. Card Verification Lookup -->
-    <section id="verify" class="py-20 bg-white">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12">
-                <h2 class="text-4xl font-extrabold text-fhcg-dark sm:text-5xl border-b-4 border-fhcg-red inline-block pb-1">
-                    Verify Your Graded Card
-                </h2>
-                <p class="mt-4 text-lg text-gray-600">
-                    Enter the unique serial number found on the Nano Card Grading label to view its digital certificate and grade details.
-                </p>
-            </div>
-
-            <div class="bg-gray-50 p-8 rounded-2xl shadow-xl border border-fhcg-red/30">
-                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
-                    <input type="text" id="serial-input" placeholder="Enter Serial Number (e.g., NANO12345678)" 
-                           class="w-full sm:flex-grow p-3 border-2 border-gray-300 rounded-xl focus:border-fhcg-red focus:ring-fhcg-red uppercase" />
-                    <button onclick="lookupCard()" 
-                            class="w-full sm:w-auto px-8 py-3 text-base font-medium rounded-xl text-white bg-fhcg-dark hover:bg-gray-700 transition duration-300 transform hover:scale-[1.02]">
-                        Check Serial
-                    </button>
-                </div>
-                
-                <!-- Result Display Area -->
-                <div id="lookup-result" class="mt-8 pt-4 border-t border-gray-200">
-                    <p class="text-gray-500 italic text-center">Enter a serial number above to begin verification.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 4. What We Offer / Grading Scale (Section ID changed from #process to #offer to accommodate the new #verify section's logical placement, ensuring proper HTML structure for sequential sections) -->
-    <section class="py-20" id="offer"> 
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12">
-                <h2 class="text-4xl font-extrabold text-fhcg-dark sm:text-5xl border-b-4 border-fhcg-red inline-block pb-1">
-                    The Nano Card Grading Offering
-                </h2>
-                <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
-                    From our secure vault to your display case, we handle your cards with the utmost care and professionalism, ensuring maximum resale value or timeless encapsulation.
-                </p>
-            </div>
-
-            <div class="grid md:grid-cols-3 gap-8 text-center">
-                
-                <div class="p-6 rounded-xl border border-gray-200 shadow-md">
-                    <div class="text-fhcg-red text-5xl mb-4">
-                        <!-- Icon Placeholder for Slab -->
-                        <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-2 text-fhcg-dark">Archival Slab Technology</h3>
-                    <p class="text-gray-600 text-sm">Our holders are sonically sealed and made from inert, UV-resistant material, protecting your card's condition indefinitely.</p>
-                </div>
-
-                <div class="p-6 rounded-xl border border-gray-200 shadow-md">
-                    <div class="text-fhcg-red text-5xl mb-4">
-                        <!-- Icon Placeholder for Grading Scale -->
-                        <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 12l2-2 2 2 2-2 2 2m0 0l-2 2-2-2-2 2m0 0l-2-2-2 2M12 14v7m0-7l-2-2m2 2l2-2m-2 2v-7"></path></svg>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-2 text-fhcg-dark">Transparent 10-Point Scale</h3>
-                    <p class="text-gray-600 text-sm">We use the industry-standard 10-point scale, including Gem Mint 10 and NANO 10 (reserved for truly flawless cards), backed by subgrades on the label.</p>
-                </div>
-
-                <div class="p-6 rounded-xl border border-gray-200 shadow-md">
-                    <div class="text-fhcg-red text-5xl mb-4">
-                        <!-- Icon Placeholder for QR code -->
-                        <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"></path></svg>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-2 text-fhcg-dark">Digital Verification</h3>
-                    <p class="text-gray-600 text-sm">Each slab includes a secure QR code linking to a digital certificate, high-res scans, and the card's entire grading history.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 5. Submission Request Form -->
-    <section id="submit" class="py-20 bg-fhcg-red">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12">
-                <h2 class="text-4xl font-extrabold text-white sm:text-5xl border-b-4 border-white inline-block pb-1">
-                    Start Your Submission
-                </h2>
-                <p class="mt-4 text-xl text-red-200">
-                    Ready to protect and certify your collection? Contact us to begin your card submission process today.
-                </p>
-            </div>
-
-            <div class="bg-white p-10 rounded-2xl shadow-2xl">
-                <p class="text-lg text-fhcg-dark mb-6">
-                    To start, simply send us an email to the address below with the following information:
-                </p>
-                <ul class="text-gray-700 space-y-3 mb-6">
-                    <li>**1. Your Contact Information** (Name, Phone Number)</li>
-                    <li>**2. Submission Tier** (Economy, Standard, or Express)</li>
-                    <li>**3. Card List** (Game/Set, Player/Character, Year, Approx. Value for Insurance)</li>
+            <!-- AI -->
+            <div class="bg-white p-8 rounded-2xl shadow-xl border-t-4 border-novaGold text-novaBlack">
+                <h3 class="text-2xl font-bold text-novaGold mb-4">🛸 AI Star-Scan Analysis</h3>
+                <ul class="list-disc list-inside text-gray-700 space-y-2">
+                    <li>Microscopic surface & print defect detection</li>
+                    <li>Centering measured with sub-pixel accuracy</li>
+                    <li>Corner sharpness & edge microfracture analysis</li>
                 </ul>
+                <p class="mt-3 text-gray-500 italic text-sm">Generates a 0–10 baseline grade.</p>
+            </div>
 
-                <div class="text-center p-6 border-2 border-dashed border-fhcg-red bg-red-50 rounded-xl">
-                    <p class="text-lg font-bold text-fhcg-red mb-2">Sample Submission Email:</p>
-                    <a href="mailto:submissions@foothillcards.com" class="text-2xl font-extrabold text-fhcg-dark hover:text-fhcg-red transition duration-300">
-                        submissions@foothillcards.com
-                    </a>
-                </div>
-
-                <div id="message-box" class="hidden mt-4 p-3 bg-green-100 text-green-700 rounded-lg"></div>
-
-                <div class="mt-8 text-center">
-                    <button onclick="copyEmail()" class="px-8 py-3 border border-transparent text-base font-medium rounded-xl shadow-md text-fhcg-red bg-white border-fhcg-red hover:bg-gray-100 transition duration-300">
-                        Copy Email to Clipboard
-                    </button>
-                    <!-- Hidden element to hold the email for copying -->
-                    <textarea id="email-to-copy" style="position: absolute; left: -9999px;">submissions@foothillcards.com</textarea>
-                </div>
+            <!-- HUMAN -->
+            <div class="bg-white p-8 rounded-2xl shadow-xl border-t-4 border-novaBlack text-novaBlack">
+                <h3 class="text-2xl font-bold text-novaBlack mb-4">⭐ Master Grader Review</h3>
+                <ul class="list-disc list-inside text-gray-700 space-y-2">
+                    <li>Authenticity checks & tamper verification</li>
+                    <li>Eye appeal: color, gloss, print quality</li>
+                    <li>Final balanced, human-verified grade</li>
+                </ul>
+                <p class="mt-3 text-gray-500 italic text-sm">Where expertise meets innovation.</p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Footer -->
-    <footer class="py-10 bg-fhcg-dark text-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <p>&copy; 2024 Nano Card Grading. All rights reserved. Located in the heart of the Sierra Nevadas.</p>
-            <div class="mt-4 text-sm text-gray-400 space-x-4">
-                <a href="#" class="hover:text-fhcg-red">Terms of Service</a>
-                <span class="text-gray-600">|</span>
-                <a href="#" class="hover:text-fhcg-red">Privacy Policy</a>
+<!-- PRICING -->
+<section id="pricing" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+        <h2 class="text-5xl font-extrabold text-novaBlack border-b-4 border-novaGold inline-block pb-2">
+            Transparent Nova Pricing
+        </h2>
+        <p class="mt-4 text-gray-600">
+            Simple tiers — premium results.
+        </p>
+
+        <div class="grid md:grid-cols-3 gap-10 mt-12">
+
+            <!-- ECONOMY -->
+            <div class="p-8 bg-gray-50 rounded-xl shadow hover:shadow-2xl transition border-t-8 border-novaBlack">
+                <h3 class="text-2xl font-bold text-novaBlack">Economy</h3>
+                <p class="text-5xl font-extrabold text-novaBlack mt-3">$15</p>
+                <p class="text-gray-600 mb-6">90-day estimate</p>
+                <ul class="text-gray-700 text-left space-y-2">
+                    <li>✓ AI + Human grading</li>
+                    <li>✓ Premium slab & label</li>
+                </ul>
+            </div>
+
+            <!-- STANDARD (Highlight) -->
+            <div class="p-8 bg-novaGold rounded-xl shadow-2xl transform scale-105 text-white">
+                <div class="mb-3">
+                    <span class="bg-white text-novaGold px-3 py-1 rounded-full text-xs font-bold uppercase">
+                        Most Popular
+                    </span>
+                </div>
+                <h3 class="text-2xl font-bold">Standard</h3>
+                <p class="text-5xl font-extrabold mt-3">$30</p>
+                <p class="text-yellow-100 mb-6">30-day estimate</p>
+                <ul class="text-white/90 text-left space-y-2">
+                    <li>★ Priority grading</li>
+                    <li>★ Full insurance coverage option</li>
+                </ul>
+            </div>
+
+            <!-- EXPRESS -->
+            <div class="p-8 bg-gray-50 rounded-xl shadow hover:shadow-2xl transition border-t-8 border-novaBlack">
+                <h3 class="text-2xl font-bold text-novaBlack">Express</h3>
+                <p class="text-5xl font-extrabold text-novaBlack mt-3">$50</p>
+                <p class="text-gray-600 mb-6">15-day estimate</p>
+                <ul class="text-gray-700 text-left space-y-2">
+                    <li>✓ Fastest turnaround</li>
+                    <li>✓ Expedited insured shipping</li>
+                </ul>
             </div>
         </div>
-    </footer>
+    </div>
+</section>
 
-    <!-- JavaScript for utility functions -->
-    <script>
-        // Sample card data (simulating a database)
-        const gradedCards = {
-            "NANO000001": {
-                cardName: "Mickey Mantle Rookie",
-                year: 1952,
-                set: "Topps",
-                grade: "9.5",
-                population: "1",
-                subgrades: { centering: 9.5, surface: 9.5, corners: 9.5, edges: 10 },
-                certifiedDate: "2024-08-15"
-            },
-            "FHCG90001": {
-                cardName: "Charizard Holographic",
-                year: 1999,
-                set: "Base Set 1st Edition",
-                grade: "10.0",
-                subgrades: { centering: 10, surface: 10, corners: 10, edges: 10 },
-                certifiedDate: "2024-10-01"
-            },
-            "FHCG00550": {
-                cardName: "LeBron James RC",
-                year: 2003,
-                set: "Topps Chrome",
-                grade: "8.0",
-                subgrades: { centering: 8.5, surface: 8.0, corners: 7.5, edges: 8.0 },
-                certifiedDate: "2024-09-20"
-            }
-        };
+<!-- VERIFY -->
+<section id="verify" class="py-20 bg-novaGray">
+    <div class="max-w-4xl mx-auto px-6 text-center">
 
-        function lookupCard() {
-            const input = document.getElementById('serial-input').value.trim().toUpperCase();
-            const resultDiv = document.getElementById('lookup-result');
-            
-            // Clear previous results
-            resultDiv.innerHTML = '';
-            
-            const cardData = gradedCards[input];
-            
-            if (cardData) {
-                // Card Found - Display Success
-                let subgradeHtml = Object.entries(cardData.subgrades).map(([key, value]) => 
-                    `<span class="text-sm font-semibold capitalize">${key}:</span> <span class="text-fhcg-dark">${value}</span>`
-                ).join(' | ');
+        <h2 class="text-5xl font-extrabold text-white border-b-4 border-novaGold inline-block pb-2">
+            Verify Your Nova Slab
+        </h2>
+        <p class="mt-4 text-gray-300">
+            Enter your serial number to view the digital certificate.
+        </p>
 
-                resultDiv.innerHTML = `
-                    <div class="bg-green-50 border-l-4 border-green-500 p-6 rounded-xl shadow-inner">
-                        <p class="text-lg font-bold text-green-700 mb-4 flex items-center">
-                            <span class="mr-2 text-2xl">✅</span> Verification Successful: Official Nano Grading
-                        </p>
-                        
-                        <h3 class="text-3xl font-extrabold text-fhcg-dark mb-2">${cardData.cardName} (${cardData.year})</h3>
-                        <p class="text-xl font-bold text-fhcg-red mb-4">Grade: ${cardData.grade}</p>
+        <div class="bg-white p-8 rounded-2xl shadow-xl mt-12">
+            <div class="flex flex-col sm:flex-row gap-4">
+                <input id="serial-input"
+                    placeholder="Enter Serial Number"
+                    class="w-full p-3 border-2 border-gray-300 rounded-xl uppercase text-black placeholder:text-gray-600" />
 
-                        <div class="grid sm:grid-cols-2 gap-y-2 text-gray-700 text-sm border-t pt-3">
-                            <p><span class="font-semibold">Serial:</span> ${input}</p>
-                            <p><span class="font-semibold">Set:</span> ${cardData.set}</p>
-                            <p><span class="font-semibold">Certified:</span> ${cardData.certifiedDate}</p>
-                            <p class="sm:col-span-2 mt-2">
-                                <span class="font-semibold text-fhcg-dark">Subgrades:</span> ${subgradeHtml}
-                            </p>
-                        </div>
-                    </div>
-                `;
-            } else {
-                // Card Not Found - Display Error
-                resultDiv.innerHTML = `
-                    <div class="bg-red-50 border-l-4 border-red-500 p-6 rounded-xl shadow-inner">
-                        <p class="text-lg font-bold text-red-700 mb-2 flex items-center">
-                            <span class="mr-2 text-2xl">❌</span> Verification Failed
-                        </p>
-                        <p class="text-gray-700">The serial number **${input}** was not found in our database. Please double-check the number on your slab and try again.</p>
-                        <p class="text-sm mt-2 text-red-600 italic">If the problem persists, please contact customer support.</p>
-                    </div>
-                `;
-            }
+                <button onclick="lookupCard()"
+                    class="px-8 py-3 bg-novaBlack text-white rounded-xl hover:bg-gray-800 transition">
+                    Check Serial
+                </button>
+            </div>
+
+            <div id="lookup-result" class="mt-8 text-gray-500 italic text-center">
+                Enter a serial number above to begin verification.
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SUBMIT -->
+<section id="submit" class="py-20 bg-novaGold">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+
+        <h2 class="text-5xl font-extrabold text-white border-b-4 border-white inline-block pb-2">
+            Submit Your Cards
+        </h2>
+        <p class="mt-4 text-xl text-white/80">
+            Start your submission by emailing us.
+        </p>
+
+        <div class="bg-white p-10 rounded-2xl shadow-2xl mt-10 text-left">
+            <p class="text-gray-700 mb-4">Please include:</p>
+            <ul class="text-gray-700 space-y-2 mb-6">
+                <li>1. Contact info</li>
+                <li>2. Grading tier</li>
+                <li>3. Card list + insurance values</li>
+            </ul>
+
+            <div class="text-center p-6 border border-dashed border-novaGold rounded-xl bg-yellow-50">
+                <p class="font-bold text-novaGold mb-2">Submission Email:</p>
+                <a href="mailto:submissions@novagrading.com" class="text-xl font-bold text-novaBlack hover:text-novaGold">
+                    submissions@novagrading.com
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="py-10 bg-novaBlack text-center text-gray-400">
+    <p>&copy; 2024 Nova Grading Co. A new star in card grading.</p>
+    <div class="mt-4 space-x-4">
+        <a href="#" class="hover:text-novaGold">Terms</a>
+        <a href="#" class="hover:text-novaGold">Privacy</a>
+    </div>
+</footer>
+
+<!-- JS -->
+<script>
+    const gradedCards = {
+        "NOVA000001": {
+            cardName: "Mickey Mantle Rookie",
+            year: 1952,
+            set: "Topps",
+            grade: "9.5",
+            subgrades: { centering: 9.5, surface: 9.5, corners: 9.5, edges: 10 },
+            certifiedDate: "2024-08-15"
         }
-        window.lookupCard = lookupCard; // Expose to global scope for HTML button
+    };
 
-        // Function to copy the email address to the clipboard
-        function copyEmail() {
-            const copyText = document.getElementById("email-to-copy");
-            copyText.select();
-            copyText.setSelectionRange(0, 99999); // For mobile devices
+    function lookupCard() {
+        const input = document.getElementById("serial-input").value.trim().toUpperCase();
+        const result = document.getElementById("lookup-result");
+        result.innerHTML = "";
 
-            // Use execCommand('copy') for better compatibility in iframe environments
-            try {
-                const successful = document.execCommand('copy');
-                const msgBox = document.getElementById('message-box');
-                if (successful) {
-                    msgBox.textContent = 'Email copied to clipboard successfully!';
-                    msgBox.classList.remove('hidden', 'bg-green-100', 'text-green-700');
-                    msgBox.classList.add('bg-fhcg-red/20', 'text-fhcg-dark');
-                } else {
-                    msgBox.textContent = 'Failed to copy. Please manually copy: submissions@foothillcards.com';
-                    msgBox.classList.remove('hidden', 'bg-green-100', 'text-green-700');
-                    msgBox.classList.add('bg-fhcg-dark/20', 'text-fhcg-dark');
-                }
-                msgBox.classList.remove('hidden');
-                setTimeout(() => {
-                    msgBox.classList.add('hidden');
-                }, 3000);
-            } catch (err) {
-                console.error('Fallback: Could not copy text: ', err);
-                const msgBox = document.getElementById('message-box');
-                msgBox.textContent = 'Failed to copy. Please manually copy: submissions@foothillcards.com';
-                msgBox.classList.remove('hidden');
-                setTimeout(() => {
-                    msgBox.classList.add('hidden');
-                }, 3000);
-            }
+        const card = gradedCards[input];
+
+        if (!card) {
+            result.innerHTML = `
+                <div class="bg-red-50 border-l-4 border-red-500 p-6 rounded-xl">
+                    <p class="text-red-700 font-bold mb-2">❌ Serial Not Found</p>
+                    <p class="text-gray-700">Please double-check your entry.</p>
+                </div>`;
+            return;
         }
-        window.copyEmail = copyEmail; // Expose to global scope for HTML button
-    </script>
+
+        let subHtml = Object.entries(card.subgrades)
+            .map(([k, v]) => `<strong>${k}:</strong> ${v}`)
+            .join(" | ");
+
+        result.innerHTML = `
+            <div class="bg-green-50 border-l-4 border-green-600 p-6 rounded-xl">
+                <h3 class="font-bold text-green-700 text-xl mb-2">✔ Verified Nova Slab</h3>
+                <p class="text-novaBlack font-bold text-2xl mb-1">${card.cardName} (${card.year})</p>
+                <p class="text-novaGold font-bold text-xl mb-4">Grade: ${card.grade}</p>
+                <p><strong>Serial:</strong> ${input}</p>
+                <p><strong>Set:</strong> ${card.set}</p>
+                <p><strong>Certified:</strong> ${card.certifiedDate}</p>
+                <p class="mt-2"><strong>Subgrades:</strong> ${subHtml}</p>
+            </div>`;
+    }
+</script>
+
 </body>
 </html>
